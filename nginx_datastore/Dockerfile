@@ -1,6 +1,6 @@
 FROM busybox
 
-WORKDIR /tmp
+WORKDIR /tmp/phpbb
 RUN \
 	mkdir -p /etc/nginx/conf.d /www/phpbb && \
 	wget https://www.phpbb.com/files/release/phpBB-3.1.3.zip -O phpbb.zip && \
