@@ -1,8 +1,8 @@
 FROM busybox
 
-WORKDIR /tmp/phpbb
 ADD https://www.phpbb.com/files/release/phpBB-3.1.3.zip /tmp/phpbb/phpbb.zip
 ADD https://www.phpbb.com/customise/db/download/109011 /tmp/phpbb/phpbb-rus.zip
+WORKDIR /tmp/phpbb
 RUN \
 	mkdir -p /etc/nginx/conf.d /www/phpbb && \
 	unzip phpbb.zip -qq -d . && \
