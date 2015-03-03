@@ -7,7 +7,7 @@ RUN \
 	mkdir -p /etc/nginx/conf.d /www/phpbb && \
 	unzip phpbb.zip -qq -d . && \
 	unzip phpbb-rus.zip -d . && \
-	mv phpBB/* russian_1_1_3/* /www/phpbb/
+	mv phpBB3/* russian_1_1_3/* /www/phpbb/
 ADD phpbb.conf /etc/nginx/conf.d/
 VOLUME /etc/nginx/conf.d
 VOLUME /www
