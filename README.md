@@ -39,6 +39,8 @@
   * docker run --name mysql --volumes-from mysql_datastore \  
   -e MYSQL_ROOT_PASSWORD=YourRootPass -e MYSQL_DATABASE=phpBB \  
   -e MYSQL_USER=phpBBuser -e MYSQL_PASSWORD=PhpbbDbPass -d mysql  
-  * docker run --name php-fpm --link mysql:mysql --volumes-from nginx_datastore -d php-fpm  
-  * docker run --name nginx --privileged --link php-fpm:php-fpm --volumes-from nginx_datastore -p 80:80 -d nginx  
+  * docker run --name php-fpm --link mysql:mysql \  
+  --volumes-from nginx_datastore -d php-fpm  
+  * docker run --name nginx --privileged --link php-fpm:php-fpm \  
+  --volumes-from nginx_datastore -p 80:80 -d nginx  
 
