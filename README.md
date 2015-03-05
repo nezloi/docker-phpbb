@@ -26,10 +26,10 @@
 
 Необходимо склонировать репозиторий. Все дальнейшие действия выполнять в корне репозитория.
 
-* Создание контейнеров.
-** docker build -t mysql_datastore mysql_datastore/  
-** docker build -t nginx_datastore nginx_datastore/  
-** docker pull mysql  
-** docker build -t php-fpm php-fpm/  
-** docker build -t nginx nginx/  
+* Создание контейнеров.  
+  * docker build -t mysql_datastore mysql_datastore/  
+  * docker build -t nginx_datastore nginx_datastore/  
+  * docker pull mysql  
+  * docker build -t php-fpm php-fpm/  
+  * docker build -t nginx nginx/  
 
