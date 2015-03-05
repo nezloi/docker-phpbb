@@ -22,18 +22,18 @@
 
 Дополнение к <a href="http://blog.derz.co/posts/2015/02/27/chast-11-docker-vvedenie/" target="_blank">серии статей</a> о запуске phpBB с помощью docker.
 
-### Краткое содержание.
+### Краткое содержание
 
 Необходимо склонировать репозиторий. Все дальнейшие действия выполнять в корне репозитория.
 
-* Создание контейнеров.  
+* Создание контейнеров:  
   * docker build -t mysql_datastore mysql_datastore/  
   * docker build -t nginx_datastore nginx_datastore/  
   * docker build -t php-fpm php-fpm/  
   * docker build -t nginx nginx/  
   * docker pull mysql  
 
-* Запуск контейнеров  
+* Запуск контейнеров:  
   * docker run --name mysql_datastore mysql_datastore true  
   * docker run --name nginx_datastore nginx_datastore true  
   * docker run --name mysql --volumes-from mysql_datastore \  
