@@ -9,7 +9,7 @@ RUN \
 	unzip phpbb-rus.zip -qq -d . && \
 	cp -r  phpBB3/* russian_1_1_3/* /www/phpbb/ && \
 	rm -r /tmp/phpbb && \
-	chown -R www-data.www-data /www/phpbb/cache /www/phpbb/files /www/phpbb/store /www/phpbb/config.php
+	chown -R www-data.www-data /www/phpbb/cache /www/phpbb/files /www/phpbb/store /www/phpbb/config.php /www/phpbb/images/avatars/upload
 ADD phpbb.conf /etc/nginx/conf.d/
 VOLUME /etc/nginx/conf.d
 VOLUME /www
