@@ -17,7 +17,19 @@
 	                                                                      
 	◀━━━━━━━━▶  volumes-from                                              
 	                                                                      
-	◁────────▷  link                                                      
-	
+	◁────────▷  link                                                      	
 ---
-проект в работе, подробности http://blog.derz.co
+
+Дополнение к <a href="/posts/2015/03/01/chast-12-mysql-php-nginx-via-docker/" target="_blank">серии статей</a> о запуске phpBB с помощью docker.
+
+### Краткое содержание.
+
+Необходимо склонировать репозиторий. Все дальнейшие действия выполнять в корне репозитория.
+
+* Создание контейнеров.
+* * docker build -t mysql_datastore mysql_datastore/  
+* * docker build -t nginx_datastore nginx_datastore/  
+* * docker pull mysql  
+* * docker build -t php-fpm php-fpm/  
+* * docker build -t nginx nginx/  
+
