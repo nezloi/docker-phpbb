@@ -44,3 +44,8 @@
   * docker run --name nginx --privileged --link php-fpm:php-fpm \  
   --volumes-from nginx_datastore -p 80:80 -d nginx  
 
+* Конфигурация форума:
+
+На этапе "Установка: Настройка базы данных" необходимо заполнить поля в соответствии с данными, которые задали при старте контейнера mysql. Контейнер php-fpm знает контейнер с базой данных как mysql (`--link mysql:mysql`) что и будет являться адресом в "Имя сервера БД".
+
+![docker-phpbb](https://raw.githubusercontent.com/nezloi/docker-phpbb/master/screenshot.jpg)
