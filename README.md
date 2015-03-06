@@ -1,8 +1,9 @@
 # docker-phpbb
+Дополнение к <a href="http://blog.derz.co/posts/2015/02/27/chast-11-docker-vvedenie/" target="_blank">серии статей</a> о запуске phpBB с помощью docker.
 ---
 	┌───────────────┐     ┌───────────────┐                               
 	│               │     │               │                               
-	│mysql_datastore◀━━━━━▶     mysql     |                 
+	│mysql_datastore◀━━━━━▶     mysql     │                 
 	│               │     │               │                              
 	└───────────────┘     └───────△───────┘   ┌──────────────────┐        
 	                              │           │                  │   HTTP 
@@ -19,9 +20,6 @@
 	                                                                      
 	◁────────▷  link                                                      	
 ---
-
-Дополнение к <a href="http://blog.derz.co/posts/2015/02/27/chast-11-docker-vvedenie/" target="_blank">серии статей</a> о запуске phpBB с помощью docker.
-
 ### Краткое содержание
 
 Необходимо склонировать репозиторий. Все дальнейшие действия выполнять в корне репозитория.
@@ -49,3 +47,5 @@
 На этапе "Установка: Настройка базы данных" необходимо заполнить поля в соответствии с данными, которые задали при старте контейнера mysql. Контейнер php-fpm знает контейнер с базой данных как mysql (`--link mysql:mysql`) что и будет являться адресом в "Имя сервера БД".
 
 ![docker-phpbb](https://raw.githubusercontent.com/nezloi/docker-phpbb/master/screenshot.jpg)
+
+<a href="http://blog.derz.co/posts/2015/02/27/chast-11-docker-vvedenie/" target="_blank">Подробное описание выбранной стратегии и лучшие практики.</a>
