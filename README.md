@@ -1,6 +1,6 @@
 # docker-phpbb
 
-Дополнение к <a href="http://blog.derz.co/posts/2015/02/27/chast-11-docker-vvedenie/" target="_blank">серии статей</a> о запуске phpBB с помощью docker.
+Дополнение к <a href="http://s.derz.co/1E43zLw" target="_blank">серии статей</a> о запуске phpBB с помощью docker.
 ---
 	┌───────────────┐     ┌───────────────┐                               
 	│               │     │               │                               
@@ -49,4 +49,4 @@
 
 ![docker-phpbb](https://raw.githubusercontent.com/nezloi/docker-phpbb/gh-pages/screenshot.jpg)
 
-<a href="http://blog.derz.co/posts/2015/02/27/chast-11-docker-vvedenie/" target="_blank">Подробное описание выбранной стратегии и лучшие практики.</a>
+<a href="http://s.derz.co/1E43zLw" target="_blank">Подробное описание выбранной стратегии и лучшие практики.</a>
